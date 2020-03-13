@@ -15,4 +15,5 @@ def delete_nth(order, max_e)
   order.each do |item|
     result << item if result.count(item) < max_e
   end
+  result
 end
