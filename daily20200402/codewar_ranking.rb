@@ -10,7 +10,7 @@ class User
   end
   
   def ranks
-    Hash[RANK_LIST.map.with_index { |x, i| [i, x] }]
+    @rank_list ||= Hash[RANK_LIST.map.with_index { |x, i| [i, x] }]
   end
 
   def inc_progress(activity_rank)
